@@ -7,8 +7,8 @@ $desc  = $_POST['description'];
 $date  = $_POST['due_date'];
 
 // Query insert
-$query = "INSERT INTO tasks (title, description, due_date, status)
-          VALUES ('$title', '$desc', '$date', 'Belum Selesai')";
+$query = "INSERT INTO tasks (title, description, due_date)
+          VALUES ('$title', '$desc', '$date')";
 
 mysqli_query($conn, $query);
 
